@@ -127,3 +127,82 @@ function onOrderError(pizzaName) {
 // // pizzaPalace.order("Vienna", makePizza, onOrderError);
 
 // ------------------------------------------------------------------------------------
+
+// ------------------------РАБОТА С СТРОКАМИ В КОНСТРУКТОРЕ----------------------------
+
+class StringBuilder {
+  // Change code below this line
+  #value;
+  constructor(initialValue) {
+    this.#value = initialValue;
+  }
+
+  getValue() {
+    return this.#value;
+  }
+
+  padEnd(str) {
+    this.#value += str;
+  }
+
+  padStart(str) {
+    this.#value = str + this.#value;
+  }
+
+  padBoth(str) {
+    this.padStart(str);
+    this.padEnd(str);
+  }
+}
+
+// Change code above this line
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
+
+// -----------------------------------------------------------------------------------
+
+// ---------------------ПРИЗНАЧЕННЯ РОЛІ ЧЕРЕЗ СТАТИЧНІ ВЛАСТИВОСТІ-------------------
+
+class User {
+  // Оголошення та ініціалізація статичної властивості
+  static Roles = {
+    ADMIN: "admin",
+    EDITOR: "editor",
+  };
+
+  #email;
+  #role;
+
+  constructor({ email, role }) {
+    this.#email = email;
+    this.#role = role;
+  }
+
+  get role() {
+    return this.#role;
+  }
+
+  set role(newRole) {
+    this.#role = newRole;
+  }
+}
+
+const mango = new User({
+  email: "mango@mail.com",
+  role: User.Roles.ADMIN,
+});
+
+console.log(mango.Roles); // undefined
+console.log(User.Roles); // { ADMIN: "admin", EDITOR: "editor" }
+
+console.log(mango.role); // "admin"
+mango.role = User.Roles.EDITOR;
+console.log(mango.role); // "editor"
+
+// -----------------------------------------------------------------------------------
