@@ -1210,51 +1210,77 @@
 
 // console.log(Admin.AccessLevel.BASIC);
 
-class User {
-  email;
+// class User {
+//   email;
 
-  constructor(email) {
-    this.email = email;
-  }
+//   constructor(email) {
+//     this.email = email;
+//   }
 
-  get email() {
-    return this.email;
-  }
+//   get email() {
+//     return this.email;
+//   }
 
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
-class Admin extends User {
-  // Change code below this line
-  blacklistedEmails = [];
-  static AccessLevel = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-  };
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
+//   blacklistedEmails = [];
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
 
-  constructor({ email, accessLevel }) {
-    super(email);
-    this.accessLevel = accessLevel;
-  }
-  blacklist(email) {
-    this.blacklistedEmails.push(email);
-  }
-  isBlacklisted(email) {
-    return this.blacklistedEmails.includes(email);
-  }
-  // Change code above this line
-}
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email);
+//   }
+//   // Change code above this line
+// }
 
-const mango = new Admin({
-  email: "mango@mail.com",
-  accessLevel: Admin.AccessLevel.SUPERUSER,
-});
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
 
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
 
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // ["poly@mail.com"]
-console.log(mango.isBlacklisted("mango@mail.com")); // false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// function past(h, m, s) {
+//   return (h * 60 * 60 * 1000) + (m * 60 * 1000) + (s * 1000);
+// }
+
+// console.log(past(1, 1, 1));
+
+// function findNeedle(haystack) {
+//   const needle = haystack.find(option => option.label === "blue");
+// }
+
+// function switchItUp(number) {
+//   switch (number) {
+//     case 0: return 'Zero';
+//     case 1: return 'One';
+//     case 2: return 'Two';
+//     case 3: return 'Three';
+//     case 4: return 'Four';
+//     case 5: return 'Five';
+//     case 6: return 'Six';
+//     case 7: return 'Seven';
+//     case 8: return 'Eight';
+//     case 9: return 'Nine';
+//   }
+// }
+// console.log(switchItUp(9));

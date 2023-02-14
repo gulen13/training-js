@@ -206,3 +206,51 @@ mango.role = User.Roles.EDITOR;
 console.log(mango.role); // "editor"
 
 // -----------------------------------------------------------------------------------
+
+//  ------------------------------ Rock Paper Scissors! ------------------------------
+// VARIANT - 1
+const rps = (p1, p2) => {
+  if (p1 === 'rock' && p2 === 'scissors' || p1 === 'scissors' && p2 === 'paper' || p1 === 'paper' && p2 === 'rock') {
+    return `player 1 win`
+  } else if (p1 === 'scissors' && p2 === 'rock' || p1 === 'paper' && p2 === 'scissors' || p1 === 'rock' && p2 === 'paper') {
+    return `Player ${p2} won!`
+  } else {
+    return `Draw!`
+  }
+};
+// VARIANT - 2
+const rps2 = (p1, p2) => {
+  if (p1 === p2) return 'Draw!';
+  if (p1 === 'rock' && p2 === 'scissors') return 'Player 1 won!';
+  if (p1 === 'scissors' && p2 === 'paper') return 'Player 1 won!';
+  if (p1 === 'paper' && p2 === 'rock') return 'Player 1 won!';
+  return 'Player 2 won!';
+};
+
+rps2('paper', 'scissors');
+console.log(rps('paper', 'scissors'));
+
+//  ----------------------------------------------------------------------------------
+
+//  ------------------------ ОТОБРАЖЕНИЕ ЦИСЛА СЛОВОМ --------------------------------
+// VARIANT - 1
+function switchItUp(number) {
+  var words = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+  return words[number];
+}
+// VARIANT - 2
+function switchItUp(number) {
+  switch (number) {
+    case 0: return 'Zero';
+    case 1: return 'One';
+    case 2: return 'Two';
+    case 3: return 'Three';
+    case 4: return 'Four';
+    case 5: return 'Five';
+    case 6: return 'Six';
+    case 7: return 'Seven';
+    case 8: return 'Eight';
+    case 9: return 'Nine';
+  }
+}
+//  ----------------------------------------------------------------------------------
