@@ -1284,3 +1284,163 @@
 //   }
 // }
 // console.log(switchItUp(9));
+
+// function minMax(arr) {
+
+
+//   return [Math.min(...arr), Math.max(...arr)];
+// }
+
+// console.log(minMax([1, 2, 3, 4, 5]));
+
+// function high(x) {
+
+
+// }
+
+
+// high('man i need a taxi up to ubud');
+
+// function findNeedle(haystack) {
+//   return 'found the needle at position ' + haystack.indexOf('needle');
+// }
+
+// var haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];
+// console.log(findNeedle(haystack_1));
+
+// const humanYearsCatYearsDogYears = function (humanYears) {
+//   let catYears = 0;
+//   if (humanYears === 1) {
+//     catYears = 15;
+//   } else if (humanYears === 2) {
+//     catYears = 24;
+//   } else if (humanYears > 2) {
+//     catYears = 24 + (humanYears - 2) * 4;
+//   }
+
+//   let dogYears = 0;
+//   if (humanYears === 1) {
+//     dogYears = 15;
+//   } else if (humanYears === 2) {
+//     dogYears = 24;
+//   } else if (humanYears > 2) {
+//     dogYears = 24 + (humanYears - 2) * 5;
+//   }
+
+
+//   let totalYears = [];
+//   totalYears.push(humanYears, catYears, dogYears);
+
+//   return totalYears;
+// }
+
+// console.log(humanYearsCatYearsDogYears(10));
+
+// var countSheep = function (num) {
+//   let str = "";
+//   for (let i = 1; i <= num; i++) { str += `${i} sheep...`; }
+//   return str;
+// }
+
+// console.log(countSheep(2));
+// console.log(countSheep(3));
+// console.log(countSheep(1));
+// console.log(countSheep(0));
+
+// function high(x) {
+//   let alphabets = [
+//     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+//     'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+//   ];
+
+//   let words = x.split(" ");
+//   let highestScore = 0;
+//   let highestScoreWord = "";
+
+//   for (let word of words) {
+//     let lettersSum = 0;
+
+//     for (let letter of word) {
+//       lettersSum += alphabets.indexOf(letter) + 1;
+//     }
+
+//     if (lettersSum > highestScore) {
+//       highestScore = lettersSum;
+//       highestScoreWord = word;
+//     }
+//   }
+
+//   return highestScoreWord;
+// }
+
+// function likes(names) {
+//   let str = "";
+//   if (names = []) {
+//     console.log('no one likes this');
+//   } else if (names.length(1)) {
+//     console.log(names[0]);
+//   }
+// }
+
+// likes([]);
+// likes(['Peter']);
+// // console.log(likes(['Jacob', 'Alex']));
+// // console.log(likes(['Max', 'John', 'Mark']));
+// // console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
+
+// --------------------------- STRING + NAMES LIKES --------------------------------
+
+// function likes(names) {
+//   switch (names.length) {
+//     case 0: return 'no one likes this'; break;
+//     case 1: return names[0] + ' likes this'; break;
+//     case 2: return names[0] + ' and ' + names[1] + ' like this'; break;
+//     case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'; break;
+//     default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
+//   }
+// }
+
+// console.log(likes(['Jacob', 'Alex']));
+
+// function nbYear(p0, percent, aug, p) {
+
+//   for (var years = 0; p0 < p; years++) {
+//     p0 = Math.floor(p0 + p0 * percent / 100 + aug);
+//   }
+//   return years
+// }
+// console.log(nbYear(1500, 5, 100, 5000));
+
+// function nbYear(p0, percent, aug, p) {
+//   var count = 0;
+//   while (p0 < p) {
+//     p0 = Math.floor((1 + percent / 100) * p0 + aug);
+//     count++
+//   }
+//   return count;
+// }
+
+// console.log(nbYear(1500000, 2.5, 10000, 2000000));
+
+// function cockroachSpeed(s) {
+//   return Math.floor(s / 3600 * 100000);
+// }
+
+// console.log(cockroachSpeed(1.08));
+
+
+// function cockroachSpeed(s) {
+//   return Math.floor(s / 3600 * 100000);
+// }
+
+// function makeNegative(num) {
+//   return -Math.abs(num);
+// }
+
+// console.log(makeNegative(56));
+
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+//   return Math.abs(sonYearsOld * 2 - dadYearsOld);
+// }
+
+// console.log(twiceAsOld(36, 7))
