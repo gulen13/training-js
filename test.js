@@ -1444,3 +1444,54 @@
 // }
 
 // console.log(twiceAsOld(36, 7))
+
+// var min = function (list) {
+
+//   // let minNum = 0;
+
+//   // for (let i = 0; i <= list.length; i++) {
+//   //   if (list[i] < list[0]) {
+//   //     minNum = list[i];
+//   //   }
+//   // }
+
+//   // return minNum;
+
+//   // return Math.min.apply(null, list);
+// }
+
+// var max = function (list) {
+
+//   // let maxNum = 0;
+
+//   // for (let i = 0; i <= list.length; i++) {
+//   //   if (list[i] > list[0]) {
+//   //     maxNum = list[i];
+//   //   }
+//   // }
+
+//   // return maxNum;
+
+//   // return Math.max.apply(null, list);
+// }
+
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
+
+// console.log(min([42, 54, 65, 87, 3]));
+// console.log(max([4, 6, 2, 1, 9, 63, -134, 566]));
+
+// function reverseWords(str) {
+
+//   // let arrWords = str.split(' ');
+
+//   // console.log(arrWords);
+
+//   // let revWords = arrWords.map(word => word.split('').reverse().join(''));
+
+//   // return revWords.join(" ");
+
+//   return str.split("").reverse().join("").split(" ").reverse().join(" ");
+// }
+
+// console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
