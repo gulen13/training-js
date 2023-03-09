@@ -1605,3 +1605,6 @@
 //   textOutput.textContent = selectedOptionText;
 //   valueOutput.textContent = selectedOptionValue;
 // }
+
+// const message = 'NodeJs is Cool';
+// console.log(message);

@@ -1,0 +1,24 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "interesting-tasks.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulen13/training-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulen13/training-js/issues"
+  },
+  "homepage": "https://github.com/gulen13/training-js#readme",
+  "dependencies": {
+    "validator": "^13.9.0"
+  }
+}
