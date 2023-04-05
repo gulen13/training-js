@@ -1608,3 +1608,83 @@
 
 // const message = 'NodeJs is Cool';
 // console.log(message);
+
+// function descendingOrder(n){
+
+// let array = (""+n).split("").map(Number);
+
+// const descendingScores = array.sort((b, a) => a - b);
+
+// return Number(descendingScores.join(''));
+
+// }
+
+// console.log(descendingOrder(3454389));
+
+// function evenOrOdd(number) {
+
+// // if ((number % 2) = 0) {
+// //   return "Even";
+// // }
+
+// // return "Odd"
+
+//   return (number % 2) === 0 ? "Even": "Odd";
+// }
+
+// console.log(evenOrOdd(7));
+
+
+// String.prototype.toJadenCase = function () {
+
+// let array = str.split(' ');
+// let newArray = [];
+
+// for (const word of array) {
+// let b = word[0].toUpperCase() + word.slice(1);
+// newArray.push(b);
+// }
+
+// let newString = newArray.join(' ');
+
+//  return newString
+// };
+
+// var str = "How can mirrors be real if our eyes aren't real"
+
+// console.log(String.prototype.toJadenCase(str))
+
+function domainName(url){
+
+// let U = new URL(url);
+
+// let T = U.hostname.indexOf('.');
+
+// let N = U.hostname.length - T;
+
+// return U.hostname.slice(0, (U.hostname.length - N));
+
+
+// console.log(U.hostname.slice(0, (U.hostname.length - N)));
+
+// let W = url.indexOf('w')
+// let S = url.indexOf('/');
+// let D = url.indexOf('.');
+
+// if (url.includes("www")) {
+//   console.log(url)
+//   console.log(url.slice(W+5, D));
+// }
+
+// return url.slice(S+2, D);
+
+// console.log(url.slice(Q+2, T))
+
+let A = url.split('');
+
+
+console.log(A)
+
+}
+
+domainName("www.xakep.ru")
