@@ -294,3 +294,43 @@ function high(x) {
 }
 
 //  ----------------------------------------------------------------------------------
+
+//  ----------------------- Пошук назви домену----------------------------------------
+function domainName(url) {
+  // --------------Мой вариант
+  if (url.includes("www")) {
+    let D = url.indexOf('.')
+    let word1 = url.slice(D + 1);
+    let D2 = word1.indexOf('.');
+    return word1.slice(0, D2);
+  } else if (url.includes('http')) {
+    let U = new URL(url);
+    let T = U.hostname.indexOf('.');
+    let N = U.hostname.length - T;
+    return U.hostname.slice(0, (U.hostname.length - N));
+  } else {
+    let D3 = url.indexOf('.')
+    return url.slice(0, D3);
+  }
+  //  -------Лучшый на codewars
+  url = url.replace("https://", '');
+  url = url.replace("http://", '');
+  url = url.replace("www.", '');
+  console.log(url.split('.')[0]);
+}
+domainName("www.xakep.ru")
+
+//  ----------------------------------------------------------------------------------
+
+//  -------------------- Перетворення літер на різний регістр-------------------------
+
+function toWeirdCase(string) {
+  return string.split(' ').map(function (word) {
+    return word.split('').map(function (letter, index) {
+      return index % 2 == 0 ? letter.toUpperCase() : letter.toLowerCase()
+    }).join('');
+  }).join(' ');
+}
+toWeirdCase('This is a test')
+
+//  ----------------------------------------------------------------------------------

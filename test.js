@@ -1654,37 +1654,74 @@
 
 // console.log(String.prototype.toJadenCase(str))
 
-function domainName(url){
+// function domainName(url) {
 
-// let U = new URL(url);
-
-// let T = U.hostname.indexOf('.');
-
-// let N = U.hostname.length - T;
-
-// return U.hostname.slice(0, (U.hostname.length - N));
-
-
-// console.log(U.hostname.slice(0, (U.hostname.length - N)));
-
-// let W = url.indexOf('w')
-// let S = url.indexOf('/');
-// let D = url.indexOf('.');
-
-// if (url.includes("www")) {
-//   console.log(url)
-//   console.log(url.slice(W+5, D));
+// ------Мой вариант
+//   if (url.includes("www")) {
+//     let D = url.indexOf('.')
+//     let word1 = url.slice(D + 1);
+//     let D2 = word1.indexOf('.');
+//     return word1.slice(0, D2);
+//   } else if (url.includes('http')) {
+//     let U = new URL(url);
+//     let T = U.hostname.indexOf('.');
+//     let N = U.hostname.length - T;
+//     return U.hostname.slice(0, (U.hostname.length - N));
+//   } else {
+//     let D3 = url.indexOf('.')
+//     return url.slice(0, D3);
+//   }
+//  -------Лучшый на codewars
+// url = url.replace("https://", '');
+// url = url.replace("http://", '');
+// url = url.replace("www.", '');
+// console.log(url.split('.')[0]);
 // }
+// domainName("www.xakep.ru")
 
-// return url.slice(S+2, D);
+// function toWeirdCase(string) {
+//  -----------  Вариант 1
+  // var str = string.toLowerCase().split(''); // Переводим строку в нижний регистр, и разбиваем на массив. 
+  // var j = 0;
+  // for(var i = 0; i < str.length; i++){ // проходимся циклом по этим массивам
+  //     if(str[i] == ' '){
+  //         j = 0;
+  //         continue;
+  //     }
+  //     else{
+  //         if (j % 2 == 0){
+  //             str[i] = str[i].toUpperCase(); // переводим элемент с четным индексом в верхний регистр
+  //         }
+  //         j++;
+  //     }
+  // }
+  // return str.join('');
 
-// console.log(url.slice(Q+2, T))
+  //  -----------  Вариант 2
+  // return string.split(' ').map(function(word){
+  //   return word.split('').map(function(letter, index){
+  //     return index % 2 == 0 ? letter.toUpperCase() : letter.toLowerCase()
+  //   }).join('');
+  // }).join(' ');
 
-let A = url.split('');
 
+  //  -----------  Вариант 3
+  // var str = '';
+  // var counter = 0;
+  
+  // for(var i = 0; i < string.length; i++) {
+  //   if(string[i] === ' ') {
+  //     str += ' ';
+  //     counter = 0;
+  //   } else if(counter % 2 === 0) {
+  //     str += string[i].toUpperCase();
+  //     counter++;
+  //   } else if(counter % 2 !== 0) {
+  //     str += string[i].toLowerCase();
+  //     counter++;
+  //   }
+  // }
+  // return str;
 
-console.log(A)
-
-}
-
-domainName("www.xakep.ru")
+// }
+// toWeirdCase('This is a test')
