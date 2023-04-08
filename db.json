@@ -1,0 +1,184 @@
+{
+  "music": [
+    {
+      "id": 1,
+      "author": "Sting",
+      "name": "Desert Rose"
+    },
+    {
+      "id": 2,
+      "author": "GHOSTEMANE",
+      "name": "Mercury"
+    },
+    {
+      "id": 3,
+      "author": "Tiesto",
+      "name": "adagio for string"
+    },
+    {
+      "id": 4,
+      "author": "Scooter",
+      "name": "4 Am"
+    },
+    {
+      "id": 5,
+      "author": "Kendrick Lamar",
+      "name": "Savior"
+    },
+    {
+      "id": 6,
+      "author": "Money",
+      "name": "The Drums"
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 7
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 8
+    },
+    {
+      "author": "Put",
+      "id": 9,
+      "string": "Patch"
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 12
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 13
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 14
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 15
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 16
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 17
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 18
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 19
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 20
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 21
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 22
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 23
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 24
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 25
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 26
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 27
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 28
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 29
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 30
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 31
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 32
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 33
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 34
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 35
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 36
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 37
+    },
+    {
+      "author": "Maroon5",
+      "name": "Gold",
+      "id": 38
+    }
+  ]
+}

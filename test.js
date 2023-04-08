@@ -1681,47 +1681,65 @@
 
 // function toWeirdCase(string) {
 //  -----------  Вариант 1
-  // var str = string.toLowerCase().split(''); // Переводим строку в нижний регистр, и разбиваем на массив. 
-  // var j = 0;
-  // for(var i = 0; i < str.length; i++){ // проходимся циклом по этим массивам
-  //     if(str[i] == ' '){
-  //         j = 0;
-  //         continue;
-  //     }
-  //     else{
-  //         if (j % 2 == 0){
-  //             str[i] = str[i].toUpperCase(); // переводим элемент с четным индексом в верхний регистр
-  //         }
-  //         j++;
-  //     }
-  // }
-  // return str.join('');
+// var str = string.toLowerCase().split(''); // Переводим строку в нижний регистр, и разбиваем на массив. 
+// var j = 0;
+// for(var i = 0; i < str.length; i++){ // проходимся циклом по этим массивам
+//     if(str[i] == ' '){
+//         j = 0;
+//         continue;
+//     }
+//     else{
+//         if (j % 2 == 0){
+//             str[i] = str[i].toUpperCase(); // переводим элемент с четным индексом в верхний регистр
+//         }
+//         j++;
+//     }
+// }
+// return str.join('');
 
-  //  -----------  Вариант 2
-  // return string.split(' ').map(function(word){
-  //   return word.split('').map(function(letter, index){
-  //     return index % 2 == 0 ? letter.toUpperCase() : letter.toLowerCase()
-  //   }).join('');
-  // }).join(' ');
+//  -----------  Вариант 2
+// return string.split(' ').map(function(word){
+//   return word.split('').map(function(letter, index){
+//     return index % 2 == 0 ? letter.toUpperCase() : letter.toLowerCase()
+//   }).join('');
+// }).join(' ');
 
 
-  //  -----------  Вариант 3
-  // var str = '';
-  // var counter = 0;
-  
-  // for(var i = 0; i < string.length; i++) {
-  //   if(string[i] === ' ') {
-  //     str += ' ';
-  //     counter = 0;
-  //   } else if(counter % 2 === 0) {
-  //     str += string[i].toUpperCase();
-  //     counter++;
-  //   } else if(counter % 2 !== 0) {
-  //     str += string[i].toLowerCase();
-  //     counter++;
-  //   }
-  // }
-  // return str;
+//  -----------  Вариант 3
+// var str = '';
+// var counter = 0;
+
+// for(var i = 0; i < string.length; i++) {
+//   if(string[i] === ' ') {
+//     str += ' ';
+//     counter = 0;
+//   } else if(counter % 2 === 0) {
+//     str += string[i].toUpperCase();
+//     counter++;
+//   } else if(counter % 2 !== 0) {
+//     str += string[i].toLowerCase();
+//     counter++;
+//   }
+// }
+// return str;
 
 // }
 // toWeirdCase('This is a test')
+
+// const BASE_URL = 'http://localhost:3000/music/11'
+
+// const newSong = {
+//   "string": "Patch",
+// }
+
+// const options = {
+//   method: 'DELETE',
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+// };
+
+// fetch(`${BASE_URL}`, options)
+//   .then(response => response.json())
+//   .then(console.log)
+
