@@ -1743,3 +1743,13 @@
 //   .then(response => response.json())
 //   .then(console.log)
 
+
+// let firstObj = { name: 'Hello' };
+// firstObj = { name: 'Bye' };
+// let secondObj = firstObj;
+// console.log(secondObj.name);
+
+let firstObj = 5;
+let secondObj = firstObj;
+firstObj = 10;
+console.log(secondObj);
